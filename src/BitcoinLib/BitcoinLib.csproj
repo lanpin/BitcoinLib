@@ -1,12 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFrameworks>netstandard20;net461</TargetFrameworks>
-    <Title>BitcoinLib</Title>
-    <Description>.NET Bitcoin &amp; Altcoins library</Description>
-    <Copyright>George Kimionis 2014 - 2017</Copyright>
-    <Version>1.7.1.0</Version>
-    <FileVersion>1.7.1.0</FileVersion>
-  </PropertyGroup>
-  <Import Project="..\..\.paket\Paket.Restore.targets" />
+    <PropertyGroup>
+        <TargetFrameworks>netcoreapp2.1;net461</TargetFrameworks>
+        <Title>Lanpin.BitcoinLib</Title>
+        <Description>Fork BitcoinLib by George Kimionis
+.NET Bitcoin &amp; Altcoins library</Description>
+        <Copyright>Lanpin.BitcoinLib</Copyright>
+        <Version>1.7.1.2</Version>
+        <FileVersion>1.7.1.0</FileVersion>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageId>Lanpin.BitcoinLib</PackageId>
+        <Authors>Lanpin.BitcoinLib</Authors>
+        <Company>Lanpin.BitcoinLib</Company>
+        <Product>Lanpin.BitcoinLib</Product>
+    </PropertyGroup>
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+      <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
+    </ItemGroup>
 </Project>
